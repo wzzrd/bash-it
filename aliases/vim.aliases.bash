@@ -1,7 +1,10 @@
 #!/bin/bash
 
 if [ "$(uname -s)" == "Darwin" ]; then
-    alias v='mvim --remote-tab'
+    vim=mvim
 else
-    alias v='vim --remote-tab'
+    vim=vim
 fi
+
+alias vi=${vim}
+alias v='${vim} --remote-tab'
