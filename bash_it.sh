@@ -25,10 +25,10 @@ do
 done
 
 # Plugins
-PLUGINS="${BASH}/plugins/*.bash"
+PLUGINS="base battery browser git ssh z"
 for config_file in $PLUGINS
 do
-  source $config_file
+  source ${BASH_IT_HOME}/plugins/${config_file}.plugin.bash
 done
 
 # Aliases
