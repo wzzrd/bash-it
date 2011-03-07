@@ -9,5 +9,5 @@ export LSCOLORS='Gxfxcxdxdxegedabagacad'
 
 # Load the theme
 if [[ $BASH_THEME ]]; then
-    source "$BASH/themes/$BASH_THEME/$BASH_THEME.theme.bash"
+    source "${BASH_IT_HOME}/themes/$BASH_THEME/$BASH_THEME.theme.bash"
 fi

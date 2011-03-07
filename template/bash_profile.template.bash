@@ -7,7 +7,7 @@
 export PATH=$PATH:~/.gem/ruby/1.8/bin:/opt/nginx/sbin
 
 # Path to the bash it configuration
-export BASH=$HOME/.bash_it
+export BASH_IT_HOME=$HOME/.bash_it
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
@@ -55,4 +55,4 @@ export hchtstoredir="$HOME/.hcht"
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
 
 # Load Bash It
-source $BASH/bash_it.sh
+source ${BASH_IT_HOME}/bash_it.sh

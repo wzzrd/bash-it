@@ -7,18 +7,18 @@ alias reload='source ~/.bash_profile'
 # Load the framework
 
 # Load colors first so they can be use in base theme
-source "${BASH}/themes/colors.theme.bash"
-source "${BASH}/themes/base.theme.bash"
+source "${BASH_IT_HOME}/themes/colors.theme.bash"
+source "${BASH_IT_HOME}/themes/base.theme.bash"
 
 # Library
-LIB="${BASH}/lib/*.bash"
+LIB="${BASH_IT_HOME}/lib/*.bash"
 for config_file in $LIB
 do
   source $config_file
 done
 
 # Tab Completion
-COMPLETION="${BASH}/completion/*.bash"
+COMPLETION="${BASH_IT_HOME}/completion/*.bash"
 for config_file in $COMPLETION
 do
   source $config_file
@@ -32,14 +32,14 @@ do
 done
 
 # Aliases
-FUNCTIONS="${BASH}/aliases/*.bash"
+FUNCTIONS="${BASH_IT_HOME}/aliases/*.bash"
 for config_file in $FUNCTIONS
 do
   source $config_file
 done
 
 # Custom
-CUSTOM="${BASH}/custom/*.bash"
+CUSTOM="${BASH_IT_HOME}/custom/*.bash"
 for config_file in $CUSTOM
 do
   source $config_file
