@@ -10,11 +10,6 @@ alias l1='ls -1'
 
 alias _="sudo"
 
-if [ $(uname) = "Linux" ]
-then
-	alias ls="ls --color=always"
-fi
-
 alias c='clear'
 alias k='clear'
 
