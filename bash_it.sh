@@ -2,7 +2,7 @@
 # Initialize Bash It
 
 # Reload Library
-alias reload='source ~/.bash_profile'
+alias reinit='source ~/.bash_profile'
 
 # Load the framework
 
